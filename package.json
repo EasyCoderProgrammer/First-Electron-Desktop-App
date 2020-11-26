@@ -1,0 +1,30 @@
+{
+  "name": "electron-app",
+  "productName": "Noob Programmer FirstApp",
+  "version": "1.0.0",
+  "description": "Simple App",
+  "main": "main.js",
+  "devDependencies": {
+    "electron": "^11.0.3"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build-installer": "electron-packager"
+  },
+  "build": {
+    "appId": "Noob Programmer FirstApp",
+    "win": {
+      "target": ["nsis"],
+      "icon": "img/ICON.png"
+    },
+    "nsis": {
+      "installerIcon": "img/ICON.png",
+      "uninstallerIcon": "img/ICON.png",
+      "uninstallDisplayName": "Noob Programmer",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "author": "Kaarthik",
+  "license": "ISC"
+}
